@@ -1,0 +1,28 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+config.local.php
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Runtime logs, caches, and temporary files
+*.log
+*.tmp
+*.cache
+/logs/
+/tmp/
+/cache/
+
+# Local database exports and backups
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+*-dump.sql
+*-backup.sql

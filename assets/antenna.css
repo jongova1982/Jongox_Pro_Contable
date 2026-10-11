@@ -1,0 +1,19 @@
+.sidebar-foot.antenna-status{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:148px;padding:7px 10px 11px;overflow:hidden;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none!important}
+.antenna-stage{position:relative;width:118px;height:112px;display:grid;place-items:center}
+.antenna-part{position:absolute;z-index:2;display:block;width:105px;height:105px;object-fit:contain;filter:drop-shadow(0 6px 8px rgba(0,0,0,.42)) drop-shadow(0 0 6px rgba(24,156,255,.2))}
+.antenna-dish{clip-path:inset(0 0 42% 0);transform-origin:50% 55%}
+.antenna-mast{clip-path:inset(48% 0 0 0)}
+.antenna-status.online .antenna-dish{animation:dish-scan 3.6s ease-in-out infinite}
+.antenna-wave{position:absolute;z-index:1;top:15px;left:50%;width:46px;height:22px;border:1.5px solid #3effad;border-bottom:0;border-radius:50% 50% 0 0;transform:translateX(-50%) scale(.55);opacity:0}
+.antenna-status.online .antenna-wave{animation:antenna-wave 2s ease-out infinite}.antenna-status.online .wave-two{animation-delay:1s}
+.antenna-caption{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;margin-top:-1px;text-align:center}
+.antenna-light{width:8px;height:8px;flex:0 0 auto;border-radius:50%;background:#35f5a2;box-shadow:0 0 6px #35f5a2,0 0 15px rgba(53,245,162,.75);animation:antenna-light 1.45s ease-in-out infinite}
+.antenna-caption small{display:block!important;margin:0!important;color:#b9cbe0!important;font-size:10px;letter-spacing:.2px}
+.antenna-status.offline .antenna-stage{filter:saturate(.45)}
+.antenna-status.offline .antenna-dish{animation:none}
+.antenna-status.offline .antenna-wave{display:none}
+.antenna-status.offline .antenna-light{background:#ff4056;box-shadow:0 0 6px #ff4056,0 0 14px rgba(255,64,86,.68);animation:none}
+@keyframes dish-scan{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes antenna-wave{0%{transform:translateX(-50%) scale(.45);opacity:.85}75%,100%{transform:translateX(-50%) translateY(-22px) scale(1.55);opacity:0}}
+@keyframes antenna-light{50%{opacity:.42;box-shadow:0 0 3px #35f5a2}}
+@media(prefers-reduced-motion:reduce){.antenna-status.online .antenna-dish,.antenna-status.online .antenna-wave,.antenna-light{animation:none}}

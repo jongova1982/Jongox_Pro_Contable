@@ -1,0 +1,19 @@
+JONGOX PRO - INSTALACIÓN LOCAL EN XAMPP
+=======================================
+
+1. Inicie Apache y MySQL desde el panel de control de XAMPP.
+
+2. Abra http://localhost/phpmyadmin, cree una base de datos llamada
+   jongox_contable e importe el archivo database.sql.
+
+3. La configuración predeterminada de config.php usa:
+   Host: localhost (puerto 3306)
+   Base de datos: jongox_contable
+   Usuario: root
+   Contraseña: vacía (valor predeterminado de XAMPP)
+
+   Si su instalación de MySQL usa otra contraseña, actualice DB_PASS en
+   config.php.
+
+4. Coloque esta carpeta dentro de htdocs y abra
+   http://localhost/jongox_pro_release/.

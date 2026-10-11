@@ -1,0 +1,31 @@
+/* Fondo de marca Jongox Pro */
+html{background:#020b1d}
+body{
+  min-height:100vh;
+  background-color:#020b1d;
+  background-image:
+    linear-gradient(90deg,rgba(2,11,29,.2),rgba(2,11,29,.05)),
+    url("brand/jongox-pro-background.png");
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+main{min-height:100vh;background:linear-gradient(110deg,rgba(3,14,35,.22),rgba(3,17,40,.08))}
+header{border-bottom-color:rgba(91,155,224,.22)}
+header h1{color:#f5f9ff;text-shadow:0 2px 18px rgba(0,0,0,.28)}
+header p{color:#6fdaf0}
+.live{color:#c4d9ee;border-color:rgba(118,177,230,.28);background:rgba(4,25,53,.58)}
+.user{border-left-color:rgba(133,180,224,.25)}
+.user b{color:#f4f8ff}.user small{color:#a9bed4}
+.panel,.cards article{background:rgba(255,255,255,.965);box-shadow:0 16px 42px rgba(0,5,20,.2)}
+.sidebar{background:linear-gradient(180deg,rgba(5,21,45,.96),rgba(3,13,28,.98))}
+
+@media(max-width:700px){
+  body{background-attachment:scroll;background-size:auto 100vh;background-position:center top}
+  main{background:rgba(3,14,33,.2)}
+}
+
+@media(prefers-reduced-data:reduce){
+  body{background-image:linear-gradient(145deg,#06182f,#020b1d)}
+}

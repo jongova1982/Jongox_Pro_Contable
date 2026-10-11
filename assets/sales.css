@@ -1,0 +1,7 @@
+.hidden { display: none !important; }
+.sale-type { border: 0; padding: 0; margin: 0 0 15px; }
+.sale-type legend { font-weight: 650; font-size: 12px; margin-bottom: 8px; }
+.sale-type label { display: inline-flex; align-items: center; gap: 7px; margin: 0 18px 0 0; font-weight: 500; }
+.sale-type input { width: auto; margin: 0; accent-color: #1769e0; }
+#party-field small { display: block; margin-top: 6px; color: #6b778b; }
+#party-field a { color: #1769e0; }
